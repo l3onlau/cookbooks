@@ -2,7 +2,7 @@
 
 ### Description
 
-A simple, complete chain for building an AI chatbot operating strictly on a 4.8GB usable VRAM / 12GB RAM budget. The pipeline is designed to minimize hallucinations and maximize faithfulness through strict routing and evaluation.
+A simple, complete chain for building an AI chatbot operating strictly on a 5GB usable VRAM / 12GB RAM budget. The pipeline is designed to minimize hallucinations and maximize faithfulness through strict routing and evaluation.
 
 ### Ingredients (Swappable)
 
