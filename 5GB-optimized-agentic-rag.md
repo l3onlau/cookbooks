@@ -1,10 +1,10 @@
-### Recipe Name: Edge-Optimized Agentic RAG
+### Recipe Name: 5GB optimized Agentic RAG
 
 ### Description
 
 A simple, complete chain for building an AI chatbot operating strictly on a 5GB usable VRAM / 12GB RAM budget. The pipeline is designed to minimize hallucinations and maximize faithfulness through strict routing and evaluation.
 
-### Ingredients (Swappable)
+### Ingredients (Swappable) - (Priority for vram: llm -> Reranker -> Embedding Model -> NLI(This is situation))
 
 * **Primary LLM (gpu):** `qwen3:4b-instruct-2507-q4_K_M` (via Ollama). Use KV cache quantization (8-bit is highly recommended to save memory). Justification: This model performs pretty solid for its size. The thinking variant is too slow with DSPy's Chain of Thought and lacks flexibility, while the older hybrid model performs worse than both newer counterparts with respective mode.
 * **Cross-Encoder (cpu):** `tomaarsen/Qwen3-Reranker-0.6B-seq-cls`, `Zerank 1 Small` or `BAAI/bge-reranker-v2-m3` (Great for high-accuracy reranking on low resources).
